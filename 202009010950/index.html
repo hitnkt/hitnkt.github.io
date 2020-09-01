@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
     <html lang="jp" >
     <head>
       <meta charset="UTF-8">
@@ -69,7 +69,6 @@ li {
   padding: 0;
   width: 100%;
   left: 0;
-  top: 48px;
 }
 .drop div {
   -webkit-transform: translate(0, -100%);
@@ -165,7 +164,6 @@ li {
             <li>Skills
                 <ul class="drop">
                     <div id="d">
-
                     </div>
                 </ul>
             </li>
@@ -5194,10 +5192,9 @@ VTuber
     </div>
 
     <script>
-        window.onload = function(){
-            //document.getElementsByClassName('tab-wrap')[0].appendChild(abe);
-            document.getElementsById('d')[0].append(await fetch('../1.csv').then(e=>e.text()))
-        }
+    window.onload = function(){
+     fetch('../1').then(e=>e.text()).then(e=>document.getElementById('d').innerHTML=e)
+    }
     </script>
 
 
