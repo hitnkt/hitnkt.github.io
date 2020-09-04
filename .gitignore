@@ -1,7 +1,7 @@
 # Logs
 auto_pull.js
 .gitignore
-
+world_alt.js
 logs
 *.log
 npm-debug.log*
